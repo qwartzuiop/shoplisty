@@ -1,0 +1,7 @@
+@layer components {
+  .base-button {
+    @apply flex items-center justify-center gap-1 rounded-md py-2 pl-3 font-medium
+      transition-[transform,color,background-color] focus:z-[1] active:scale-[0.96]
+      disabled:pointer-events-none disabled:opacity-60;
+  }
+}
