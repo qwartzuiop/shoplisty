@@ -1,7 +1,7 @@
 <template>
   <component
     :is="iconsMap[name]"
-    class="h-6 w-6"
+    class="base-icon"
   />
 </template>
 
