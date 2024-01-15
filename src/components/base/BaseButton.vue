@@ -3,6 +3,7 @@
     class="base-button"
     :class="[labelColor, backgroundColor, iconName && label ? 'pr-2' : 'pr-3']"
     :type="type"
+    :disabled="disabled"
   >
     <slot name="leading" />
 
@@ -35,6 +36,7 @@
       appearance?: 'primary' | 'secondary' | 'text';
       iconName?: string;
       iconClass?: string;
+      disabled?: ButtonHTMLAttributes['disabled'];
     }>(),
     {
       label: '',
@@ -42,6 +44,7 @@
       appearance: 'primary',
       iconName: '',
       iconClass: '',
+      disabled: false,
     }
   );
 

@@ -4,4 +4,8 @@
       transition-[transform,color,background-color] focus:z-[1] active:scale-[0.96]
       disabled:pointer-events-none disabled:opacity-60;
   }
+
+  .base-icon {
+    @apply h-6 w-6;
+  }
 }

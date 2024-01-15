@@ -1,7 +1,7 @@
 <template>
   <component
     :is="iconsMap[name]"
-    class="h-6 w-6"
+    class="base-icon"
   />
 </template>
 
@@ -12,6 +12,7 @@
     PlusIcon,
     MinusIcon,
     EllipsisVerticalIcon,
+    TrashIcon,
   } from '@heroicons/vue/24/outline';
   import type { FunctionalComponent } from 'vue';
 
@@ -25,5 +26,6 @@
     plus: PlusIcon,
     minus: MinusIcon,
     'dots-v': EllipsisVerticalIcon,
+    trash: TrashIcon,
   };
 </script>
