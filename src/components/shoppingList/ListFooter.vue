@@ -111,6 +111,7 @@
               appearance="primary"
               icon-name="check"
               icon-class="stroke-[2.5px] !h-4 !w-4"
+              :disabled="!itemData.name || !itemData.price"
             />
           </menu>
         </form>
