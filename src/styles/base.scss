@@ -1,4 +1,16 @@
 @layer base {
+  body {
+    padding-top: env(safe-area-inset-top);
+    padding-right: env(safe-area-inset-right);
+    padding-bottom: env(safe-area-inset-bottom);
+    padding-left: env(safe-area-inset-left);
+  }
+
+  html,
+  body {
+    @apply h-dvh;
+  }
+
   input,
   button {
     @apply touch-manipulation;
@@ -18,5 +30,12 @@
   /* Firefox */
   input[type='number'] {
     @apply [-moz-appearance:textfield];
+  }
+
+  @media (display-mode: 'standalone') {
+    html,
+    body {
+      @apply overscroll-none;
+    }
   }
 }
